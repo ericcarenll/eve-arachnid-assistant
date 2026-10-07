@@ -3,102 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVE Arachnid Interface</title>
+    <title>EVE Workstation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="screen">
-      <div class="red-vignette"></div>
-      <div class="blue-glow"></div>
-      <div class="city-backdrop"></div>
-      <div class="scan-noise"></div>
+    <div class="scene">
+      <div class="wall"></div>
 
-      <div class="hud-frame">
-        <div class="hud-circle outer"></div>
-        <div class="hud-circle inner"></div>
-        <div class="hud-line h-left"></div>
-        <div class="hud-line h-right"></div>
-        <div class="hud-line v-top"></div>
-        <div class="hud-line v-bottom"></div>
+      <div class="window left-window">
+        <div class="blind blind-1"></div>
+        <div class="blind blind-2"></div>
+        <div class="blind blind-3"></div>
+        <div class="blind blind-4"></div>
+        <div class="blind blind-5"></div>
       </div>
 
-      <div class="web-points">
-        <span class="node n1"></span>
-        <span class="node n2"></span>
-        <span class="node n3"></span>
-        <span class="node n4"></span>
-        <span class="node n5"></span>
-        <span class="node n6"></span>
-        <span class="node n7"></span>
-        <span class="node n8"></span>
-        <span class="node n9"></span>
-        <span class="node n10"></span>
-        <span class="node n11"></span>
-        <span class="node n12"></span>
-        <span class="node n13"></span>
-        <span class="node n14"></span>
-        <span class="node n15"></span>
-        <span class="node n16"></span>
-        <span class="node n17"></span>
-        <span class="node n18"></span>
-        <span class="node n19"></span>
-        <span class="node n20"></span>
+      <div class="window right-window">
+        <div class="blind blind-1"></div>
+        <div class="blind blind-2"></div>
+        <div class="blind blind-3"></div>
+        <div class="blind blind-4"></div>
+        <div class="blind blind-5"></div>
       </div>
 
-      <div class="radar-overlay">
-        <div class="radar-ring ring-1"></div>
-        <div class="radar-ring ring-2"></div>
-        <div class="radar-ring ring-3"></div>
-        <div class="radar-center"></div>
-      </div>
+      <div class="desk">
+        <div class="desk-top"></div>
+        <div class="desk-leg left-leg"></div>
+        <div class="desk-leg right-leg"></div>
 
-      <div class="city-grid">
-        <div class="building b1"></div>
-        <div class="building b2"></div>
-        <div class="building b3"></div>
-        <div class="building b4"></div>
-        <div class="building b5"></div>
-        <div class="building b6"></div>
-        <div class="building b7"></div>
-        <div class="building b8"></div>
-        <div class="building b9"></div>
-        <div class="building b10"></div>
-        <div class="building b11"></div>
-        <div class="building b12"></div>
-      </div>
-
-      <div class="interface-readout">
-        <div class="readout-label">RNG // 03</div>
-        <div class="readout-value">[ 293.68.1 1 . 42 ]</div>
-        <div class="readout-meta">
-          <span>OPEN</span>
-          <span>292.160.02.125.128</span>
+        <div class="monitor monitor-left">
+          <div class="monitor-bezel"></div>
+          <div class="screen screen-left">
+            <div class="screen-glow"></div>
+          </div>
         </div>
+
+        <div class="monitor monitor-center">
+          <div class="monitor-bezel"></div>
+          <div class="screen screen-center">
+            <div class="screen-glow"></div>
+          </div>
+        </div>
+
+        <div class="monitor monitor-right">
+          <div class="monitor-bezel"></div>
+          <div class="screen screen-right">
+            <div class="screen-glow"></div>
+          </div>
+        </div>
+
+        <div class="laptop">
+          <div class="laptop-screen"></div>
+          <div class="laptop-keyboard"></div>
+        </div>
+
+        <div class="desk-objects">
+          <div class="speaker"></div>
+          <div class="controller"></div>
+          <div class="box"></div>
+        </div>
+
+        <div class="cable cable-1"></div>
+        <div class="cable cable-2"></div>
+        <div class="cable cable-3"></div>
       </div>
 
-      <div class="mini-panel panel-left">
-        <div class="mini-tag">HUB</div>
-        <div class="mini-box"></div>
+      <div class="robot-arm">
+        <div class="arm-base"></div>
+        <div class="arm-neck"></div>
+        <div class="arm-joint j1"></div>
+        <div class="arm-joint j2"></div>
+        <div class="arm-joint j3"></div>
+        <div class="arm-tip"></div>
       </div>
 
-      <div class="mini-panel panel-right">
-        <div class="mini-tag">SYNC</div>
-        <div class="mini-box"></div>
-      </div>
+      <div class="chair"></div>
 
-      <div class="center-logo">
-        <div class="logo-sigil"></div>
-      </div>
-
-      <div class="bottom-banner">
-        <span>Connecting to global information network</span>
-        <strong>SPIDEY HUD</strong>
+      <div class="back-panel">
+        <div class="mesh"></div>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
