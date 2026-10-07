@@ -3,119 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVE | Arachnid Interface</title>
+    <title>EVE Arachnid Interface</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="scene">
-      <div class="nebula"></div>
-      <div class="scan-grid"></div>
-      <div class="web-frame">
-        <div class="web-ring web-ring-outer"></div>
-        <div class="web-ring web-ring-inner"></div>
+    <div class="screen">
+      <div class="red-vignette"></div>
+      <div class="blue-glow"></div>
+      <div class="city-backdrop"></div>
+      <div class="scan-noise"></div>
+
+      <div class="hud-frame">
+        <div class="hud-circle outer"></div>
+        <div class="hud-circle inner"></div>
+        <div class="hud-line h-left"></div>
+        <div class="hud-line h-right"></div>
+        <div class="hud-line v-top"></div>
+        <div class="hud-line v-bottom"></div>
       </div>
 
-      <header class="topbar">
-        <div class="brand-wrap">
-          <div class="brand-mark">
-            <span></span>
-          </div>
-          <div class="brand-text">
-            <span class="brand-tag">EVE // Arachnid System</span>
-          </div>
+      <div class="web-points">
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+        <span class="node n4"></span>
+        <span class="node n5"></span>
+        <span class="node n6"></span>
+        <span class="node n7"></span>
+        <span class="node n8"></span>
+        <span class="node n9"></span>
+        <span class="node n10"></span>
+        <span class="node n11"></span>
+        <span class="node n12"></span>
+        <span class="node n13"></span>
+        <span class="node n14"></span>
+        <span class="node n15"></span>
+        <span class="node n16"></span>
+        <span class="node n17"></span>
+        <span class="node n18"></span>
+        <span class="node n19"></span>
+        <span class="node n20"></span>
+      </div>
+
+      <div class="radar-overlay">
+        <div class="radar-ring ring-1"></div>
+        <div class="radar-ring ring-2"></div>
+        <div class="radar-ring ring-3"></div>
+        <div class="radar-center"></div>
+      </div>
+
+      <div class="city-grid">
+        <div class="building b1"></div>
+        <div class="building b2"></div>
+        <div class="building b3"></div>
+        <div class="building b4"></div>
+        <div class="building b5"></div>
+        <div class="building b6"></div>
+        <div class="building b7"></div>
+        <div class="building b8"></div>
+        <div class="building b9"></div>
+        <div class="building b10"></div>
+        <div class="building b11"></div>
+        <div class="building b12"></div>
+      </div>
+
+      <div class="interface-readout">
+        <div class="readout-label">RNG // 03</div>
+        <div class="readout-value">[ 293.68.1 1 . 42 ]</div>
+        <div class="readout-meta">
+          <span>OPEN</span>
+          <span>292.160.02.125.128</span>
         </div>
+      </div>
 
-        <div class="topbar-right">
-          <div class="status-pill">
-            <span class="dot"></span>
-            ONLINE
-          </div>
-          <div class="status-sub">web sync stable</div>
-        </div>
-      </header>
+      <div class="mini-panel panel-left">
+        <div class="mini-tag">HUB</div>
+        <div class="mini-box"></div>
+      </div>
 
-      <main class="dashboard">
-        <aside class="left-panel panel">
-          <nav class="menu">
-            <button class="menu-item active">
-              <span class="menu-label">Overview</span>
-              <span class="menu-index">01</span>
-            </button>
-            <button class="menu-item">
-              <span class="menu-label">Pattern Scan</span>
-              <span class="menu-index">02</span>
-            </button>
-            <button class="menu-item">
-              <span class="menu-label">Threat Grid</span>
-              <span class="menu-index">03</span>
-            </button>
-            <button class="menu-item">
-              <span class="menu-label">Neural Link</span>
-              <span class="menu-index">04</span>
-            </button>
-          </nav>
+      <div class="mini-panel panel-right">
+        <div class="mini-tag">SYNC</div>
+        <div class="mini-box"></div>
+      </div>
 
-          <div class="mission-box">
-            <span class="eyebrow">Current Mission</span>
-            <h3>Urban Awareness</h3>
-            <p>
-              Monitoring patterns, anomalies, and live intelligence across the citygrid.
-            </p>
-          </div>
-        </aside>
+      <div class="center-logo">
+        <div class="logo-sigil"></div>
+      </div>
 
-        <section class="center-panel">
-          <div class="interface-label">NEURAL INTERFACE // ARACHNID CORE</div>
-
-          <div class="holo-stage">
-            <div class="holo-ring holo-ring-1"></div>
-            <div class="holo-ring holo-ring-2"></div>
-            <div class="pulse-orb"></div>
-            <div class="core-avatar">
-              <div class="core-glow"></div>
-              <div class="core-text">EVE</div>
-            </div>
-            <div class="scan-beam"></div>
-          </div>
-
-          <div class="actions">
-            <button class="action primary">Deploy Web</button>
-            <button class="action">Analyze Pattern</button>
-            <button class="action">Threat Scan</button>
-          </div>
-        </section>
-
-        <aside class="right-panel panel">
-          <div class="stats-card card">
-            <h4>System Feed</h4>
-            <div class="metric">
-              <span>Signal Integrity</span>
-              <strong>98.6%</strong>
-            </div>
-            <div class="metric">
-              <span>Threat Density</span>
-              <strong>2.1</strong>
-            </div>
-            <div class="metric">
-              <span>Web Nodes</span>
-              <strong>184</strong>
-            </div>
-          </div>
-
-          <div class="chat-card card">
-            <h4>Live Response</h4>
-            <div class="chat-row ai">EVE: Pattern recognition online. Disturbance index stable.</div>
-            <div class="chat-row user">User: Run a deep cityscan.</div>
-            <div class="chat-row ai">
-              <span class="pulse-indicator"></span>
-              EVE: Spider-grid synchronized. Awaiting input.
-            </div>
-          </div>
-        </aside>
-      </main>
+      <div class="bottom-banner">
+        <span>Connecting to global information network</span>
+        <strong>SPIDEY HUD</strong>
+      </div>
     </div>
 
     <script src="script.js"></script>
