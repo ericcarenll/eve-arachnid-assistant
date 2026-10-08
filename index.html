@@ -35,7 +35,13 @@
           <span class="online">online</span>
         </div>
 
+        <div class="fabricator-status">
+          <span class="status-dot"></span>
+          <span class="status-text">systems stable</span>
+        </div>
+
         <div class="fabricator-viewport">
+          <div class="fabricator-halo"></div>
           <div class="shooter-3d">
             <div class="body">
               <div class="barrel">
@@ -60,11 +66,11 @@
             <div class="control-title">Fabrication Core</div>
             <div class="param">
               <span>Material</span>
-              <span class="value">Aqua Silk</span>
+              <span class="value" data-material>Aqua Silk</span>
             </div>
             <div class="param">
               <span>Flux</span>
-              <span class="value">97.4%</span>
+              <span class="value" data-flux>97.4%</span>
             </div>
             <div class="slider"></div>
           </div>
@@ -74,19 +80,19 @@
             <div class="stat-grid">
               <div class="stat-box">
                 <div>Sync</div>
-                <div class="num">96%</div>
+                <div class="num" data-sync>96%</div>
               </div>
               <div class="stat-box">
                 <div>Vibe</div>
-                <div class="num">4.8</div>
+                <div class="num" data-vibe>4.8</div>
               </div>
             </div>
           </div>
 
           <div class="button-group">
-            <button class="btn">Calibrate</button>
-            <button class="btn">Spool</button>
-            <button class="btn fire">Fabricate</button>
+            <button class="btn" data-action="calibrate">Calibrate</button>
+            <button class="btn" data-action="spool">Spool</button>
+            <button class="btn fire" data-action="fabricate">Fabricate</button>
           </div>
         </div>
       </div>
